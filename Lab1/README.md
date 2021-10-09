@@ -1,5 +1,8 @@
 ## Used Tools
 
+Visual Studio Code (with ARM Extention)
+Azure Portal
+
 ## Commandline Commands
 
 ```
