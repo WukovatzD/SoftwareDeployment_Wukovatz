@@ -20,3 +20,11 @@ steps:
     npm test
   displayName: 'npm install and build'
   workingDirectory: '$(Build.SourcesDirectory)/Application'
+  
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure for Students (e887d136-b49a-4bc4-a552-0de146f90761)'
+    appType: 'webAppLinux'
+    appName: 'dominikWukovatzNodeAppryksmby4kranq'
+    package: '$(System.DefaultWorkingDirectory)/Application'
+    customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
