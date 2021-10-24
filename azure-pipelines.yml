@@ -21,6 +21,15 @@ steps:
   displayName: 'npm install and build'
   workingDirectory: '$(Build.SourcesDirectory)/WebApp'
   
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure for Students (4b5349a8-42be-456a-a12d-efd2af804472)'
+    appType: 'webAppLinux'
+    appName: 'dominikwukovatznodeappryksmby4kranq'
+    package: '$(System.DefaultWorkingDirectory)/WebApp'
+    customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
+
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
