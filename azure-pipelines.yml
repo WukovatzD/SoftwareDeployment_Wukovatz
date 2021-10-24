@@ -21,3 +21,14 @@ steps:
   displayName: 'npm install and build'
   workingDirectory: '$(Build.SourcesDirectory)/WebApp'
   
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test-*.xml'
+    searchFolder: '$(Build.SourcesDirectory)/WebApp'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/WebApp'
+    
