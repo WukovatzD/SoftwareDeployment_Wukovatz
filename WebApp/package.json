@@ -15,9 +15,9 @@
     "mocha": "^8.2.1"
   },
   "scripts": {
-    "test": "mocha test",
+    "test": "pwd",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Dominik Wukovatz",
   "license": "ISC"
 }
