@@ -15,7 +15,7 @@
     "mocha": "^8.2.1"
   },
   "scripts": {
-    "test": "dir",
+    "test": "cd Test; dir",
     "start": "node index.js"
   },
   "author": "Dominik Wukovatz",
