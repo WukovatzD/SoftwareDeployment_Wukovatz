@@ -36,8 +36,4 @@ steps:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/test-*.xml'
     searchFolder: '$(Build.SourcesDirectory)/WebApp'
-
 - task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/WebApp'
-    
