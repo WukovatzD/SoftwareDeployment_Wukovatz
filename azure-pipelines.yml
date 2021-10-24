@@ -22,13 +22,6 @@ steps:
   workingDirectory: '$(Build.SourcesDirectory)/WebApp'
   
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Azure for Students (e887d136-b49a-4bc4-a552-0de146f90761)'
-    appType: 'webAppLinux'
-    appName: 'dominikwukovatznodeappryksmby4kranq'
-    package: '$(System.DefaultWorkingDirectory)/WebApp'
-    customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
@@ -41,6 +34,14 @@ steps:
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/WebApp'
     includeRootFolder: false
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure for Students (e887d136-b49a-4bc4-a552-0de146f90761)'
+    appType: 'webAppLinux'
+    appName: 'dominikwukovatznodeappryksmby4kranq'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
 
 - task: PublishBuildArtifacts@1
   inputs:
