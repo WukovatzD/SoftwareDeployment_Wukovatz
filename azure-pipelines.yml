@@ -24,7 +24,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Azure for Students (4b5349a8-42be-456a-a12d-efd2af804472)'
+    azureSubscription: 'Azure for Students (e887d136-b49a-4bc4-a552-0de146f90761)'
     appType: 'webAppLinux'
     appName: 'dominikwukovatznodeappryksmby4kranq'
     package: '$(System.DefaultWorkingDirectory)/WebApp'
