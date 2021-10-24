@@ -21,9 +21,6 @@ steps:
   displayName: 'npm install and build'
   workingDirectory: '$(Build.SourcesDirectory)/WebApp'
   
-- script: |
-    npm pack
-  displayName: 'Package for npm release'
 
 - task: AzureWebApp@1
   inputs:
@@ -40,23 +37,12 @@ steps:
     testResultsFiles: '**/test-*.xml'
     searchFolder: '$(Build.SourcesDirectory)/WebApp'
 
-
-- task: CopyFiles@2
+- task: ArchiveFiles@2
   inputs:
-    sourceFolder: '$(Build.SourcesDirectory)'
-    contents: '*.tgz' 
-    targetFolder: $(Build.ArtifactStagingDirectory)/npm
-  displayName: 'Copy npm package'
-
-- task: CopyFiles@2
-  inputs:
-    sourceFolder: '$(Build.SourcesDirectory)'
-    contents: 'package.json' 
-    targetFolder: $(Build.ArtifactStagingDirectory)/npm
-  displayName: 'Copy package.json'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/WebApp'
+    includeRootFolder: false
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
-    artifactName: npm
-  displayName: 'Publish npm artifact'
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/WebApp'
+
