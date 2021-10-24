@@ -40,7 +40,7 @@ steps:
     azureSubscription: 'Azure for Students (e887d136-b49a-4bc4-a552-0de146f90761)'
     appType: 'webAppLinux'
     appName: 'dominikwukovatznodeappryksmby4kranq'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
 
 - task: PublishBuildArtifacts@1
