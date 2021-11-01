@@ -9,7 +9,7 @@ appInsights
   .start();
 
 app.get("/", (req, res) => {
-  res.send("Hallo Weltii!");
+  res.send("Hallo Weltii not!");
 });
 
 app.listen(port, () => {
