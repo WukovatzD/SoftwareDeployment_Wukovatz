@@ -33,7 +33,7 @@ Production
 - Failed
 
   - ![](Screenshots/Failed_Tests.png)
-  - ![](Screenshots/Failed_Tests.png)
+  - ![](Screenshots/Failed_Tests_Build.png)
 
 # Screenshot Release Pipeline
 
