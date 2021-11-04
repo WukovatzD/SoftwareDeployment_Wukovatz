@@ -22,23 +22,23 @@ Production
 
 - Summary Pipeline
 
-  ![Build](Screenshots/Build.png)
-  ![Summary](Screenshots/Summary.png)
+  ![Build](Screenshots/Build.PNG)
+  ![Summary](Screenshots/Summary.PNG)
 
 - Succeeded
 
-  ![Passed_Tests](Screenshots/Passed_Tests.png)
-  ![Passed_Tests_Build](Screenshots/Passed_Tests_Build.png)
+  ![Passed_Tests](Screenshots/Passed_Tests.PNG)
+  ![Passed_Tests_Build](Screenshots/Passed_Tests_Build.PNG)
 
 - Failed
 
-  ![Failed_Tests](Screenshots/Failed_Tests.png)
-  ![Failed_Tests_Build](Screenshots/Failed_Tests_Build.png)
+  ![Failed_Tests](Screenshots/Failed_Tests.PNG)
+  ![Failed_Tests_Build](Screenshots/Failed_Tests_Build.PNG)
 
 # Screenshot Release Pipeline
 
 - Release Pipeline
-  ![Release_Pipeline](Screenshots/Release_Pipeline.png)
-  ![Release_Approval](Screenshots/Release_Approval.png)
-  ![Release_staging](Screenshots/Release_staging.png)
-  ![Release_Pipeline_done](Screenshots/Release_Pipeline_done.png)
+  ![Release_Pipeline](Screenshots/Release_Pipeline.PNG)
+  ![Release_Approval](Screenshots/Release_Approval.PNG)
+  ![Release_staging](Screenshots/Release_staging.PNG)
+  ![Release_Pipeline_done](Screenshots/Release_Pipeline_done.PNG)
