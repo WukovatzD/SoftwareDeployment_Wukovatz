@@ -22,23 +22,23 @@ Production
 
 - Summary Pipeline
 
-  - ![](Screenshots/Build.png)
-  - ![](Screenshots/Summary.png)
+  ![Build](Screenshots/Build.PNG)
+  ![Summary](Screenshots/Summary.PNG)
 
 - Succeeded
 
-  - ![](Screenshots/Passed_Tests.png)
-  - ![](Screenshots/Passed_Tests_Build.png)
+  ![Passed_Tests](Screenshots/Passed_Tests.PNG)
+  ![Passed_Tests_Build](Screenshots/Passed_Tests_Build.PNG)
 
 - Failed
 
-  - ![](Screenshots/Failed_Tests.png)
-  - ![](Screenshots/Failed_Tests_Build.png)
+  ![Failed_Tests](Screenshots/Failed_Tests.PNG)
+  ![Failed_Tests_Build](Screenshots/Failed_Tests_Build.PNG)
 
 # Screenshot Release Pipeline
 
 - Release Pipeline
-  - ![](Screenshots/Release_Pipeline.png)
-  - ![](Screenshots/Release_Approval.png)
-  - ![](Screenshots/Release_staging.png)
-  - ![](Screenshots/Release_Pipeline_done.png)
+  ![Release_Pipeline](Screenshots/Release_Pipeline.PNG)
+  ![Release_Approval](Screenshots/Release_Approval.PNG)
+  ![Release_staging](Screenshots/Release_staging.PNG)
+  ![Release_Pipeline_done](Screenshots/Release_Pipeline_done.PNG)
