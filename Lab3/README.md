@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # Software-Bereitstellung - Übung 3
 
 Die Aufgabe bestand darin, ein "Wordpress" mit externer MySQL DB in 2 Containern einzurichten. In jedem Teil wird die gleiche Software mittels Containern bereitgestellt, wobei die Container in Teil 2 vom Benutzer erstellt wurden.
