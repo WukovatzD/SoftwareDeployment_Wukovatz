@@ -18,11 +18,18 @@ Die Aufgabe war die Einrichtung und Konfiguration eines AKS in Azure sowie die K
 - 2. 'C:\Users\domin\.azure-kubelogin'
 
 - `az aks get-credentials --resource-group Lab4RG --name Lab4Cluster`
-- `kubectl apply -f mysql.yaml`
-- `kubectl apply -f wordpress.yaml`
+- `kubectl apply -f mysql-deployment.yaml`
+- `kubectl apply -f wordpress-deployment.yaml`
 
 ## Adress
 
 IP-Address: `http://52.236.144.179/`
 
 ## Screenshots
+
+- ComandLine
+  ![Build](Screenshots/ComandLine.PNG)
+
+- Cluster in Azure
+
+  ![Summary](Screenshots/Azure.PNG)
